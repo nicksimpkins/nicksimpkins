@@ -1,4 +1,13 @@
 {
+  "name": "Nicholas Simpkins - Personal Resume Website",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node app.js",
+    "dev": "nodemon app.js"
+  },
   "devDependencies": {
     "tailwindcss": "^3.3.1"
   },
