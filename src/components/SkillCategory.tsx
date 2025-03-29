@@ -1,20 +1,31 @@
 import * as stylex from '@stylexjs/stylex';
 import SkillBar from './SkillBar';
+import { tokens } from '../app/tokens.stylex';
 
 const styles = stylex.create({
   category: {
-    marginBottom: '1.5rem',
+    marginBottom: tokens.spacingLg,
+    padding: tokens.spacingLg,
+    backgroundColor: tokens.cardBackground,
+    borderRadius: tokens.borderRadius,
+    boxShadow: tokens.boxShadow,
+    transition: tokens.transition,
   },
   categoryTitle: {
     fontSize: '1.2rem',
     fontWeight: '600',
-    marginBottom: '0.75rem',
-    color: '#0070f3',
+    marginBottom: tokens.spacingMd,
+    color: tokens.primaryColor,
+    borderBottom: `1px solid ${tokens.borderColor}`,
+    paddingBottom: tokens.spacingSm,
   },
   skillsGrid: {
     display: 'grid',
-    gridTemplateColumns: 'repeat(auto-fill, minmax(250px, 1fr))',
-    gap: '10px',
+    gridTemplateColumns: {
+      default: 'repeat(auto-fill, minmax(300px, 1fr))',
+      '@media (max-width: 768px)': '1fr',
+    },
+    gap: tokens.spacingSm,
   },
 });
 

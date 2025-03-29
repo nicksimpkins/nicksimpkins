@@ -8,9 +8,11 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <Suspense fallback={null}>
-        <body suppressHydrationWarning={true}>{children}</body>
-      </Suspense>
+      <body suppressHydrationWarning={true}>
+        <Suspense fallback={null}>
+          {children}
+        </Suspense>
+      </body>
     </html>
   );
 }

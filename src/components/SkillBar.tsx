@@ -1,29 +1,38 @@
 import * as stylex from '@stylexjs/stylex';
+import { tokens } from '../app/tokens.stylex';
 
 const styles = stylex.create({
   skillContainer: {
     display: 'flex',
     alignItems: 'center',
-    marginBottom: '0.5rem',
+    marginBottom: tokens.spacingSm,
+    padding: tokens.spacingSm,
+    borderRadius: tokens.borderRadius,
+    backgroundColor: tokens.cardBackground,
+    transition: tokens.transition,
+    ':hover': {
+      backgroundColor: tokens.backgroundAlt,
+    },
   },
   skillName: {
-    width: '120px',
+    minWidth: '120px',
     fontSize: '0.9rem',
+    color: tokens.textPrimary,
+    fontWeight: '500',
   },
   skillBar: {
     display: 'flex',
-    gap: '5px',
+    flex: 1,
+    height: '6px',
+    backgroundColor: tokens.skillEmpty,
+    borderRadius: '3px',
+    overflow: 'hidden',
   },
-  dot: {
-    width: '12px',
-    height: '12px',
-    borderRadius: '50%',
-  },
-  filledDot: {
-    backgroundColor: '#0070f3',
-  },
-  emptyDot: {
-    backgroundColor: '#e0e0e0',
+  skillLevel: {
+    height: '100%',
+    backgroundColor: tokens.skillFilled,
+    borderRadius: '3px',
+    transition: 'width 0.5s ease-in-out',
   },
 });
 
@@ -33,23 +42,17 @@ interface SkillBarProps {
 }
 
 export default function SkillBar({ skill, level }: SkillBarProps) {
-  const dots = [];
-  for (let i = 1; i <= 5; i++) {
-    dots.push(
-      <div
-        key={i}
-        {...stylex.props(
-          styles.dot,
-          i <= level ? styles.filledDot : styles.emptyDot
-        )}
-      />
-    );
-  }
-
+  const percentage = (level / 5) * 100;
+  
   return (
     <div {...stylex.props(styles.skillContainer)}>
       <span {...stylex.props(styles.skillName)}>{skill}</span>
-      <div {...stylex.props(styles.skillBar)}>{dots}</div>
+      <div {...stylex.props(styles.skillBar)}>
+        <div 
+          {...stylex.props(styles.skillLevel)} 
+          style={{ width: `${percentage}%` }} 
+        />
+      </div>
     </div>
   );
 }
