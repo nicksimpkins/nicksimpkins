@@ -3,12 +3,13 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "dev": "next dev --turbopack",
+    "dev": "next dev",
     "build": "next build",
     "start": "next start",
     "lint": "next lint"
   },
   "dependencies": {
+    "@babel/runtime": "^7.27.0",
     "@stylexjs/babel-plugin": "^0.11.1",
     "@stylexjs/nextjs-plugin": "^0.11.1",
     "@stylexjs/stylex": "^0.11.1",
