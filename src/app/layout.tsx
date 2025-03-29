@@ -1,5 +1,5 @@
 import './globals.css';
-import * as React from 'react';
+import { Suspense } from 'react';
 
 export default function RootLayout({
   children,
@@ -8,7 +8,9 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body>{children}</body>
+      <Suspense fallback={null}>
+        <body suppressHydrationWarning={true}>{children}</body>
+      </Suspense>
     </html>
   );
 }

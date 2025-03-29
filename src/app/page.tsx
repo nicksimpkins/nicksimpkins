@@ -91,6 +91,17 @@ export default function Home() {
     { name: 'Azure', level: 3 },
   ];
 
+  const databaseSkills = [
+    { name: 'MySQL', level: 5 },
+    { name: 'PostgreSQL', level: 4 },
+    { name: 'MongoDB', level: 3 },
+    { name: 'SQLite', level: 4 },
+    { name: 'Firebase', level: 5 },
+    { name: 'DynamoDB', level: 3 },
+    { name: 'Minio', level: 3 },
+    { name: 'AWS RDS', level: 5 },
+  ];
+
   const devServiceSkills = [
     { name: 'GitHub', level: 5 },
     { name: 'Google Drive', level: 5 },
@@ -201,6 +212,7 @@ export default function Home() {
         <SkillCategory title="Languages" skills={languageSkills} />
         <SkillCategory title="Frameworks & Libraries" skills={frameworkSkills} />
         <SkillCategory title="Cloud Services" skills={cloudSkills} />
+        <SkillCategory title="Databases" skills={databaseSkills} />
         <SkillCategory title="Development Tools" skills={devServiceSkills} />
       </section>
 
