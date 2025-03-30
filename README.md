@@ -1,6 +1,6 @@
 # Nicholas Simpkins - Professional Portfolio
 
-![GitHub Pages Status](https://github.com/nicksimpkins/nicksimpkins/actions/workflows/nextjs.yml/badge.svg)
+![GitHub Pages Status](https://github.com/nicksimpkins/nicksimpkins/actions/workflows/deploy.yml/badge.svg)
 
 This repository contains the source code for my professional portfolio website built with Next.js and StyleX.
 
@@ -12,59 +12,38 @@ I'm pursuing a bachelors and masters at Illinois Institute of Technology in Chic
 - B.A.C. Information Technology & Management with a Minor in Finance (2021-2025)
 - M.A.S. Information Technology & Management with Specialization in Applied AI & ML (2023-2026)
 
-As a technology professional with a focus on financial technology, I combine technical skills with financial knowledge to build innovative solutions.
-
-## Experience
-
-- **Bank Teller** | Merrimack County Savings Bank | June 2023 - August 2023 | Concord, NH
-- **Bank Teller** | Franklin Savings Bank | May 2022 - August 2022 | Franklin, NH
+Through various applications I aim to develop and engineer platforms and services to provide simpler and more efficient ways to manage, aggregate and analyze data. Due to my background in the financial field through classes, extra curricular and work experiences I focus on data solutions for financial data.
 
 ## Projects
 
 ### Centerspoke
 Open source CLI with tools for file conversion and cloud database interactions.
 - **Technologies**: Python, SQL, AWS (RDS), MySQL
-- [GitHub Repository](https://github.com/username/centerspoke)
+- [GitHub Repository](https://github.com/visionkernel/centerspoke)
 
 ### VisionKernel
 Time-series data management and analysis platform for the financial industry.
 - **Technologies**: React, Python, SQL, TypeScript, AWS, Google Cloud, Firebase
 - [Website](https://visionkernel.co)
 
-## Skills
+### Evoweb
+An easily containerized web app that generates dynamic web content using client-side LLMs with reference from JSON data
+- **Technologies**: Svelte, JavaScript, LLMs (Phi-2 & Llama-2-7B)
+- [GitHub Repository](https://github.com/nicksimpkins/evoweb)
 
-### Languages
-- HTML & CSS
-- JavaScript/TypeScript
-- PHP
-- SQL
-- R
-- Java
-- Scala
+## My Go-To's
 
-### Frameworks & Libraries
-- React
-- NextJS
-- jQuery
-- Tailwind CSS
-- StyleX
+### IDE
+VS Code
 
-### Cloud Services
-- AWS
-- Google Cloud Platform
-- Firebase
-- Docker
-- Kubernetes
+### Repositories & CI/CD
+GitHub 
 
-### Development Tools
-- Git/GitHub
-- VS Code
-- Slack
-- Microsoft Office
-- Google Workspace
+### Web App
+React Framework + Tailwind + Vite
 
-## Certifications
-- FINRA SIE (Securities Industry Essentials)
+### McDonalds Order
+2 Double Cheeseburger + 1 McChicken
 
 ## Contact Information
 - **Email**: nicksimpkins@icloud.com | nsimpkins@hawk.iit.edu
