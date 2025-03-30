@@ -156,10 +156,31 @@ const styles = stylex.create({
     width: '20px',
     height: '20px',
   },
+  expertiseBadges: {
+    display: 'flex',
+    flexWrap: 'wrap',
+    gap: tokens.spacingSm,
+    marginBottom: tokens.spacingMd,
+  },
+  expertiseBadge: {
+    backgroundColor: tokens.backgroundAlt,
+    color: tokens.primaryColor,
+    padding: `${tokens.spacingXs} ${tokens.spacingMd}`,
+    borderRadius: '9999px',
+    fontSize: '0.85rem',
+    fontWeight: '500',
+    border: `1px solid ${tokens.borderColor}`,
+    transition: tokens.transition,
+    cursor: 'default',
+    ':hover': {
+      backgroundColor: tokens.primaryColor,
+      color: 'white',
+      transform: 'translateY(-2px)',
+    },
+  },
 });
 
 export default function Home() {
-  // Your existing skill arrays
   const languageSkills = [
     { name: 'HTML & CSS', level: 5 },
     { name: 'Python', level: 4 },
@@ -358,7 +379,16 @@ export default function Home() {
       <main {...stylex.props(styles.container)}>
         <header {...stylex.props(styles.header)}>
           <h1 {...stylex.props(styles.name)}>Nicholas Simpkins</h1>
-          <h2 {...stylex.props(styles.title)}>IT - Data Science - AI & ML - Big Data - Fintech - Cloud Architecture</h2>
+          <h2 {...stylex.props(styles.title)}>
+            <div {...stylex.props(styles.expertiseBadges)}>
+              <span {...stylex.props(styles.expertiseBadge)}>IT</span>
+              <span {...stylex.props(styles.expertiseBadge)}>Data Science</span>
+              <span {...stylex.props(styles.expertiseBadge)}>AI & ML</span>
+              <span {...stylex.props(styles.expertiseBadge)}>Big Data</span>
+              <span {...stylex.props(styles.expertiseBadge)}>Fintech</span>
+              <span {...stylex.props(styles.expertiseBadge)}>Cloud Architecture</span>
+            </div>
+          </h2>
           <div {...stylex.props(styles.contact)}>
             <span {...stylex.props(styles.contactItem)}>
               📧 nicksimpkins@icloud.com, nsimpkins@hawk.iit.edu

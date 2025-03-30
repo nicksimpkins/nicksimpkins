@@ -40,7 +40,7 @@ VS Code
 GitHub 
 
 ### Web App
-React Framework + Tailwind + Vite
+React Framework + Tailwind + Vite + SQLite
 
 ### McDonalds Order
 2 Double Cheeseburger + 1 McChicken
