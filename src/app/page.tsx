@@ -7,6 +7,7 @@ import EducationItem from '@/components/EducationItem';
 import ExperienceItem from '@/components/ExperienceItem';
 import ProjectItem from '@/components/ProjectItem';
 import SkillCategory from '@/components/SkillCategory';
+import CourseCategory from '@/components/CourseCategory';
 
 const styles = stylex.create({
   container: {
@@ -233,6 +234,122 @@ export default function Home() {
     { name: 'GitHub Co-Pilot', level: 5 },
   ];
 
+  const techCourses = [
+    {
+      name: "Applied AI & Deep Learning",
+      topics: "Game Theory, Deep Learning, Reinforcement Learning, Generative AI, NLP, Neural Networks",
+      date: "SPRING 2025"
+    },
+    {
+      name: "Cloud Computing Technologies",
+      topics: "AWS, Terraform, Vagrant, Virtualization",
+      date: "FALL 2023"
+    },
+    {
+      name: "Data Mining & Machine Learning",
+      topics: "R, Python, Jupyter, Web Scraping, Preprocessing, Classifications",
+      date: "FALL 2024"
+    },
+    {
+      name: "Programming for Data Analytics",
+      topics: "R, Python, Data Visualization, Data Analysis, Pandas, NumPy, Scikit-learn",
+      date: "SPRING 2024"
+    },
+    {
+      name: "Advanced Topics in Data Management",
+      topics: "SQL, Normalization, Data Warehousing, ETL Processes, Data Lakes, Data Governance",
+      date: "FALL 2024"
+    },
+    {
+      name: "Database Security",
+      topics: "SQL Injection, Access Control, Encryption, Backup and Recovery, Database Auditing, NIST",
+      date: "FALL 2024"
+    },
+    {
+      name: "Web Application Foundations",
+      topics: "HTML, CSS, JavaScript, Responsive Design, SEO, Human-Computer Interaction",
+      date: "SPRING 2024"
+    },
+    {
+      name: "Big Data Infrastructure",
+      topics: "Python, Scala, Spark, Minio, Jupyter",
+      date: "SPRING 2025"
+    },
+    {
+      name: "Cybersecurity Technologies",
+      topics: "Encryption, Network Security, Firewalls, Intrusion Detection, Incident Response, Risk Management",
+      date: "FALL 2023"
+    },
+    {
+      name: "System Integration",
+      topics: "Project Management, React, SQL, Terraform, Vagrant, Vault, OAuth, Proxmox",
+      date: "SPRING 2025"
+    },
+    {
+      name: "Open-Source Programming",
+      topics: "Python, I/O, Data Analysis, Pandas, NumPy, Seaborn, Object-Oriented Programming",
+      date: "SPRING 2024"
+    },
+    {
+      name: "Undergraduate Research",
+      topics: "Cybersecurity, Raspberry Pi, Ubuntu, Tornado, NMAP",
+      date: "FALL 2024"
+    },
+    {
+      name: "Intermediate Software Development",
+      topics: "Java, JDBC, Object-Oriented Programming, Design Patterns",
+      date: "SPRING 2023"
+    },
+    {
+      name: "Project Management for ITM",
+      topics: "Project Management, Agile Methodologies, Scrum, Waterfall Model, Risk Management, Stakeholder Analysis, Scope Management",
+      date: "FALL 2023"
+    },
+  ];
+
+  const financeCourses = [
+    {
+      name: "Economic Analysis of Capital Investments",
+      topics: "Net Present Value (NPV), Internal Rate of Return (IRR), Equivalent Uniform Befefit/Cost, Taxes, Inflation, Risk",
+      date: "FALL 2023"
+    },
+    {
+      name: "Investments",
+      topics: "Portfolio Theory, Asset Pricing Models (CAPM & APT), Diversification, Efficient Market Hypothesis, Behavioral Finance",
+      date: "FALL 2024"
+    },
+    {
+      name: "Financial Derivatives",
+      topics: "Options, Futures, Forwards, Swaps, Hedging Strategies, Pricing Models (Black-Scholes, Binomial Tree), Greeks",
+      date: "SPRING 2024"
+    },
+    {
+      name: "Buisness Economics",
+      topics: "Microeconomics, Market Structures, Pricing Strategies, Game Theory, Market Failures, Externalities, Buisness Cycles",
+      date: "SPRING 2025"
+    },
+    {
+      name: "Buisness Statistics",
+      topics: "Modeling, Hypothesis Testing, Regression Analysis, Time Series Analysis, Forecasting, Decision Trees, ANOVA",
+      date: "SPRING 2025"
+    },
+    {
+      name: "Principles of Economics",
+      topics: "Macroeconomics, Microeconomics, Supply and Demand, Fiscal and Monetary Policy, Economic Indicators",
+      date: "FALL 2022"
+    },
+    {
+      name: "Financial and Managerial Accounting",
+      topics: "GAAP, IFRS, Financial Statements (Balance Sheet, Income Statement, Cash Flow Statement), Accrual & Cash Accounting, Cost Systems",
+      date: "SPRING 2023"
+    },
+    {
+      name: "Rise of Global Economy",
+      topics: "Colonialism, Mercantilism, Industrial Revolution, Bretton Woods System, Globalization, Trade Wars, Emerging Markets",
+      date: "SPRING 2022"
+    },
+  ];
+
   const [linkedInHover, setLinkedInHover] = React.useState(false);
   const [githubHover, setGithubHover] = React.useState(false);
 
@@ -381,6 +498,12 @@ export default function Home() {
           <SkillCategory title="Cloud Services" skills={cloudSkills} />
           <SkillCategory title="Databases" skills={databaseSkills} />
           <SkillCategory title="Development Tools" skills={devServiceSkills} />
+        </section>
+
+        <section {...stylex.props(styles.section)}>
+          <h2 {...stylex.props(styles.sectionTitle)}>Courses</h2>
+          <CourseCategory title="Technology Courses" courses={techCourses} />
+          <CourseCategory title="Finance Courses" courses={financeCourses} />
         </section>
 
         <section {...stylex.props(styles.section)}>
