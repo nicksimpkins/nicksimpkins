@@ -10,7 +10,7 @@ Visit the live site: [nicksimpkins.github.io/nicksimpkins](https://nicksimpkins.
 
 I'm pursuing a bachelors and masters at Illinois Institute of Technology in Chicago:
 - B.A.C. Information Technology & Management with a Minor in Finance (2021-2025)
-- M.A.S. Information Technology & Management with Specialization in Applied AI & ML (2023-2026)
+- M.A.S. Information Technology & Management with Specialization in Applied Data Science & Artificial Intelligence (2023-2026)
 
 Through various applications I aim to develop and engineer platforms and services to provide simpler and more efficient ways to manage, aggregate and analyze data. Due to my background in the financial field through classes, extra curricular and work experiences I focus on data solutions for financial data.
 
