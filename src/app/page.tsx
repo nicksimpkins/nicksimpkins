@@ -317,6 +317,16 @@ export default function Home() {
       date: "FALL 2024"
     },
     {
+      name: "Data Warehousing",
+      topics: "ETL Processes, Data Modeling, Pentaho DI, OLAP, Data Lakes, SQL",
+      date: "FALL 2025"
+    },
+    {
+      name: "Service-Oriented Architectures",
+      topics: "RESTful APIs, SOAP, Microservices, JSON, XML, SDMX, API Security, Postman",
+      date: "FALL 2025"
+    },
+    {
       name: "Intermediate Software Development",
       topics: "Java, JDBC, Object-Oriented Programming, Design Patterns",
       date: "SPRING 2023"
@@ -333,6 +343,11 @@ export default function Home() {
       name: "Economic Analysis of Capital Investments",
       topics: "Net Present Value (NPV), Internal Rate of Return (IRR), Equivalent Uniform Befefit/Cost, Taxes, Inflation, Risk",
       date: "FALL 2023"
+    },
+    {
+      name: "Machine Learning for Finance",
+      topics: "Linear & Non-Linear Regression, Ensemble Algorithms, Neural Networks (RNN, LSTM), NLP, Sentiment Analysis, Time-Series Forecasting",
+      date: "FALL 2025"
     },
     {
       name: "Investments",
