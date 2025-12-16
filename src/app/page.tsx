@@ -517,6 +517,12 @@ export default function Home() {
             link="https://visionkernel.co"
           />
           <ProjectItem
+            name="VisionCharts"
+            description="Modern and high performance open source charting library for financial data visualization and analysis."
+            technologies="JavaScript, TypeScript"
+            link="https://visionkernel.co/visioncharts"
+          />
+          <ProjectItem
             name="Centerspoke"
             description="Open source CLI with tools such as file conversion, with main functionality for interacting with cloud database systems."
             technologies="Python, SQL, AWS (RDS), MySQL"
