@@ -481,7 +481,7 @@ export default function Home() {
               institution="Illinois Institute of Technology"
               dateRange="JANUARY 2023 - MAY 2026"
               location="CHICAGO, IL"
-              minor="Specialization in Applied AI & ML"
+              minor="Specialization in Applied Data Science & AI"
             />
           </div>
         </section>
