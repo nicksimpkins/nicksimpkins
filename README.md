@@ -46,7 +46,7 @@ React Framework + Tailwind + Vite + SQLite
 2 Double Cheeseburger + 1 McChicken
 
 ## Contact Information
-- **Email**: nicksimpkins@icloud.com | nsimpkins@hawk.iit.edu
+- **Email**: nicksimpkins@icloud.com | nsimpkins@hawk.illinoistech.edu
 - **Phone**: (603)-848-6787
 - **Location**: Chicago, IL
 
