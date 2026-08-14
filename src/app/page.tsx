@@ -489,10 +489,10 @@ export default function Home() {
         <section {...stylex.props(styles.section)}>
           <h2 {...stylex.props(styles.sectionTitle)}>Experience</h2>
           <ExperienceItem
-            position="IT & Security Consultant"
-            company="Freelance"
-            dateRange="JUNE 2024 - PRESENT"
-            location="VARIOUS"
+            position="IT Data Analyst"
+            company="Fidelity Investments"
+            dateRange="AUGUST 2026 - PRESENT"
+            location="MERRIMACK, NH"
           />
           <ExperienceItem
             position="Bank Teller (Seasonal)"
