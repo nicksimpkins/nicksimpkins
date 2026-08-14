@@ -267,6 +267,11 @@ export default function Home() {
       date: "FALL 2023"
     },
     {
+      name: "Data Science Practicum",
+      topics: "Python, Process Automation, Claude, LLMs, Data Analysis, Excel",
+      date: "SPRING 2026"
+    },
+    {
       name: "Data Mining & Machine Learning",
       topics: "R, Python, Jupyter, Web Scraping, Preprocessing, Classifications",
       date: "FALL 2024"
@@ -350,6 +355,11 @@ export default function Home() {
       date: "FALL 2025"
     },
     {
+      name: "High-Frequency Finance",
+      topics: "Market Microstructure, Order Book Dynamics, Algorithmic Trading, Arbitrage, Market Making, Binary Options",
+      date: "SPRING 2026"
+    },
+    {
       name: "Investments",
       topics: "Portfolio Theory, Asset Pricing Models (CAPM & APT), Diversification, Efficient Market Hypothesis, Behavioral Finance",
       date: "FALL 2024"
@@ -358,6 +368,11 @@ export default function Home() {
       name: "Financial Derivatives",
       topics: "Options, Futures, Forwards, Swaps, Hedging Strategies, Pricing Models (Black-Scholes, Binomial Tree), Greeks",
       date: "SPRING 2024"
+    },
+    {
+      name: "Time-Series Analysis",
+      topics: "ARIMA, GARCH, Stationarity, Forecasting, Volatility Modeling, Regression Analysis, Autocorrelation",
+      date: "SPRING 2026"
     },
     {
       name: "Buisness Economics",
