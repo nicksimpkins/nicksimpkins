@@ -399,6 +399,16 @@ export default function Home() {
       topics: "Colonialism, Mercantilism, Industrial Revolution, Bretton Woods System, Globalization, Trade Wars, Emerging Markets",
       date: "SPRING 2022"
     },
+    {
+      name: "Business Law",
+      topics: "Contract Law, Torts, Criminal Law, Corporate Governance, Intellectual Property",
+      date: "SUMMER 2026"
+    },
+    {
+      name: "Principles of Management",
+      topics: "Leadership, Decision Making, Communication, Team Management, Organizational Behavior",
+      date: "SUMMER 2026"
+    },
   ];
 
   const [linkedInHover, setLinkedInHover] = React.useState(false);
